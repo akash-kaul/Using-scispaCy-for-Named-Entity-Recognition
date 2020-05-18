@@ -32,4 +32,16 @@ We use pandas to read in the csv file we want. All we need is the path to the fi
 # 4. Reading in multiple text files
 This section expands the previous code to loop over the entire csv file and continually grab the text we want and use NER to grab the entities and their attributes.
 
+# 5. Helper Methods
+The helper methods are optional, but like all methods they help make the code a little more concise. The first 4, labeled "Methods to add entity/value pairs to table" each employ a different scispaCy model to add entities to the target table. The last method, labeled "Method to Extract Entity/Value Pairs" employs a given scispaCy model to perform entity extraction on a given text.
+
+## Example Helper Method
+
+![image4](https://user-images.githubusercontent.com/46678528/82264711-0e40e980-992b-11ea-928e-4ea3b9a9f4c6.png)
+
+If you perform everything correctly, you should get your entity/value pairs along with the article doi in a nice looking CSV file. 
+
+![image5](https://user-images.githubusercontent.com/46678528/82264986-92936c80-992b-11ea-8501-fe00af31f896.png)
+
+
 If you're looking for more detailed instructions, check out the post I wrote about this code [here](https://medium.com/@akkukaul007/using-scispacy-for-named-entity-recognition-785389e7918d).
